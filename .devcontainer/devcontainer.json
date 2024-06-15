@@ -1,0 +1,17 @@
+{
+    "name": "Laravel Development Container",
+    "dockerFile": "Dockerfile",
+    "extensions": [
+      "ms-azuretools.vscode-docker",
+      "ms-vscode.vscode-typescript-tslint-plugin",
+      "esbenp.prettier-vscode",
+      "bmewburn.vscode-intelephense-client",
+      "mikestead.dotenv",
+      "mhutchie.git-graph"
+    ],
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "/bin/bash"
+    },
+    "postCreateCommand": "composer install && npm install && npm run dev"
+  }
+  
